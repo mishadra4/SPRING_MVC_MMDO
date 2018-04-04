@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/com/md/lab3/Simplex.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/md/model/Size.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/WEB-INF/tags" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web/WEB-INF/view/index.jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/java/com/md/mmdo_web/web/lab1/Equation.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/java/com/md/mmdo_web/web/lab1/Point.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/java/com/md/mmdo_web/web/lab1/Utilites.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/resources/public/css/dust_scratches.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/resources/public/css/navigation" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/resources/public/css/shared" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/resources/public/css/vintage-concrete.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/MMDO_WEB/src/main/resources/public/images/favicon.png" charset="windows-1251" />
   </component>
 </project>
