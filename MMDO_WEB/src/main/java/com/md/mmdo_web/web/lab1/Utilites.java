@@ -9,13 +9,13 @@ import java.util.Scanner;
 
 @Controller
 public class Utilites {
-    @RequestMapping(value="lab1")
+    @RequestMapping(value="lab")
     public String lab1_init() {
         //model.addAttribute("greeting", greeting);
         //System.out.println(greeting.getId());
         return "lab1";
     }
-    @RequestMapping(value="lab1", method= RequestMethod.POST)
+    @RequestMapping(value="lab", method= RequestMethod.POST)
     public String resultSubmit(@RequestParam Integer[] i11, Model model) {
         model.addAttribute("i11", i11);
         //model.addAttribute("sign", sign);
@@ -52,27 +52,27 @@ public class Utilites {
         for (Integer i : coefs) {
             coef.add(i);
         }
-        //System.out.println("Введiть головне рiвняння");
-        //System.out.println("Введіть коефіцієнти головного рівняння");
+        //System.out.println("пїЅпїЅпїЅпїЅiпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅiпїЅпїЅпїЅпїЅпїЅпїЅ");
+        //System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         mainEquation = new Equation(coef);
-        //System.out.println("Введiть кiлькiсть нерiвностей");
+        //System.out.println("пїЅпїЅпїЅпїЅiпїЅпїЅ пїЅiпїЅпїЅпїЅiпїЅпїЅпїЅ пїЅпїЅпїЅiпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         //line_count = scanner.nextInt();
         Equation [] equations = new Equation[line_count];
         //int z;
         for (int i = 0; i<line_count; i++){
-            //System.out.println( "Введiть коефiцiєнти " + (i + 1) + " нерiвностi");
+            //System.out.println( "пїЅпїЅпїЅпїЅiпїЅпїЅ пїЅпїЅпїЅпїЅiпїЅiпїЅпїЅпїЅпїЅ " + (i + 1) + " пїЅпїЅпїЅiпїЅпїЅпїЅпїЅпїЅi");
             equations[i] = new Equation(coef);
-            //System.out.println("Виберiть знак нерiвностi >= -  1,  <=  - 0");
+            //System.out.println("пїЅпїЅпїЅпїЅпїЅiпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅiпїЅпїЅпїЅпїЅпїЅi >= -  1,  <=  - 0");
             //z = scanner.nextInt();
             equations[i].setSign(sign.poll());
         }
         int point_count = factorial(line_count);
-        Point[] arr = new Point[line_count + point_count];// масив точок перетину
+        Point[] arr = new Point[line_count + point_count];// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Point();
         }
         int i = 0;
-        while (i<line_count * 2){ // перетин з вісю оХ і оУ  x =0   ;  y= 0
+        while (i<line_count * 2){ // пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅ  x =0   ;  y= 0
             arr[i].setX(0);
             arr[i].setY(equations[i / 2].getC() / equations[i / 2].getB());
 
@@ -82,14 +82,14 @@ public class Utilites {
             arr[i].setX(equations[i / 2].getC() / equations[i / 2].getA());
             i++;
         }
-        for (int line1 = 0; line1<line_count; line1++){			// знаходимо точки перетину прямих
+        for (int line1 = 0; line1<line_count; line1++){			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             for (int line2 = line1 + 1; line2<line_count; line2++){
                 arr[i] = equations[line1].GetPoinIntersection(equations[line2]);
                 i++;
             }
         }
 
-        for (int j = 0; j<i; j++){			// знаходимо точки які входять в область
+        for (int j = 0; j<i; j++){			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             int key = 0;
             for (int k = 0; k<line_count; k++){
                 if (Equation.check(arr[j], equations[k]) == false){
@@ -98,8 +98,8 @@ public class Utilites {
                 }
             }
             if (key>0){
-                for (int v = j; v<i - 1; v++)//якщо точка не входить в область то її видаляємо
-                    arr[v] = arr[v + 1];//зсуваємо масив ліворуч
+                for (int v = j; v<i - 1; v++)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+                    arr[v] = arr[v + 1];//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 i--;
 
                 j--;
@@ -108,7 +108,7 @@ public class Utilites {
         }
 
         double min = 0, max = 0, Func;
-        max = mainEquation.CalculateFunction(arr[0]); // знаходимо мінімум і максимум
+        max = mainEquation.CalculateFunction(arr[0]); // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         for (int j = 1; j<i; j++){
             Func = mainEquation.CalculateFunction(arr[j]);
             if (Func>max)
@@ -122,7 +122,7 @@ public class Utilites {
         results.add(max);
         results.add(min);
         System.out.println("max= " + max + " min= " + min);
-        //System.out.println("Виконав студент групи КН-210 Драч Михайло");
+        //System.out.println("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ-210 пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         return results;
     }
 }
