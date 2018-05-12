@@ -1,0 +1,128 @@
+.inpIndex{
+    width: auto;
+}
+input.data{
+    width: 14px;
+    text-align: right;
+    target-name: "i11";
+}
+
+input.lab {
+    width: 30px;
+    text-align: right;
+    target-name: "data";
+}
+
+
+h1{
+    color: #c5d5dd;
+    font-size: 25px;
+}
+
+.bordered-link {
+    display: inline-block;
+    padding: 8px;
+    border: 3px solid #928e86;
+    border-radius: 6px;
+    box-shadow:
+            0 2px 1px rgba(0, 0, 0, 0.2),
+            inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    /* Font styles */
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.bordered-link:hover {
+    border-color: #c8bfba
+}
+
+.bordered-link:active {
+    border-color: #FEE8BD
+}
+input {
+
+    padding: 0px;
+    border: 2px solid #9c9693;
+    border-radius: 5px;
+    color: #333;
+
+}
+select {
+
+    padding: 0px;
+    border: 2px solid #9c9693;
+    border-radius: 5px;
+    color: #333;
+
+}
+p {
+    font-size: 18px;
+    color: #1d2124;
+}
+
+input:hover {
+    border-radius: 8px
+}
+
+input:focus {
+    outline: none;
+    border-radius: 8px;
+    border-color: #EBD292;
+}
+
+body {
+    background-image: url("vintage-concrete.png");
+    font-family: Gabriola;
+    padding: 0;
+    margin: 0;
+
+}
+header {
+    display: block;
+    background: #fff7b4;
+    /* Градиент */
+    top:0px;
+    margin:0px;
+    height:40px;
+    border-radius: 0px;
+}
+.header-bg {
+    background:  repeat-x center bottom;
+    /* Животные */
+    top:0;
+    margin:0;
+    padding: 0;
+    height: 40px; /* Высота шапки */
+    text-align: center; /* Выравнивание по центру */
+}
+h2{
+    font-size: 40px;
+    font-size-adjust: 2;
+    color: #1d2124;
+    margin-bottom: 20px;
+}
+#res{
+    display: inline-block;
+    padding: 8px;
+    box-shadow:
+            0 2px 1px rgba(0, 0, 0, 0.2),
+            inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    /* Font styles */
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #222;
+}
+a.download {
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgb(212,75,56); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+}
+a.download:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+a.download:active { background: rgb(152,15,0); } /* при нажатии */
+

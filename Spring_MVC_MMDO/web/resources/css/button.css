@@ -1,0 +1,313 @@
+table {
+    width: 100%; /* Ширина таблицы */
+    background: white; /* Цвет фона таблицы */
+    color: white; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+}
+td, th, tr {
+    background: #c2c4bc; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+    margin: 5px;
+}
+p.down {
+    padding-top: 5px;
+    font-size: 14px;
+}
+div.down {
+    top: 50%; /* Отступ в процентах от верхнего края окна */
+    left: 50%; /* Отступ в процентах от левого края окна */
+    width: 450px; /* Ширина блока */
+    height: 450px; /* Высота блока */
+    position: relative; /* Абсолютное позиционирование блока */
+    margin-left: -225px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+
+}
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+table button, table input { *overflow: auto; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+
+#container {
+    width: 530px;
+    margin: 60px auto;
+    list-style: none;
+    padding: 0 77px;
+}
+
+#container img { margin: 0 -77px; }
+
+#container ul { width: 400px; }
+
+#container li { display: inline; }
+
+a.button {
+    display: block;
+    float: left;
+    position: relative;
+    height: 25px;
+    width: 80px;
+    margin: 0 10px 18px 0;
+
+    text-decoration: none;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 25px;
+    text-align: center;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a.button:before,
+a.button:after {
+    content: '';
+    position: absolute;
+    left: -1px;
+    height: 25px;
+    width: 80px;
+    bottom: -1px;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+a.button:before {
+    height: 23px;
+    bottom: -4px;
+    border-top: 0;
+
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+
+    -webkit-box-shadow: 0 1px 1px 0px #bfbfbf;
+    -moz-box-shadow: 0 1px 1px 0px #bfbfbf;
+    box-shadow: 0 1px 1px 0px #bfbfbf;
+}
+/* BLACK */
+a.black,
+a.black:hover,
+a.black:visited {
+    color: #fff;
+    border-bottom: 4px solid #414141;
+    text-shadow: 0px 1px 0px #2f2f2f;
+
+    background: #656565;
+    background: -webkit-gradient(linear, left top, left bottom, from(#656565), to(#444));
+    background: -moz-linear-gradient(top,  #656565,  #444);
+
+    box-shadow: inset 1px 1px 0 #939393;
+}
+
+.black:before,
+.black:after {
+    border: 1px solid #535353;
+    border-bottom: 1px solid #343434;
+}
+
+.black:after { border: 1px solid #5a5a5a; }
+
+a.black:hover {
+    background: #444;
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#656565));
+    background: -moz-linear-gradient(top,  #444,  #656565);
+}
+
+/* ACTIVE STATE */
+a.button:active {
+    border: none;
+    bottom: -4px;
+    margin-bottom: 22px;
+
+    -webkit-box-shadow: 0 1px 1px #fff;
+    -moz-box-shadow:  0 1px 1px #fff;
+    box-shadow:  1px 1px 0 #fff, inset 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+a.button:active:before,
+a.button:active:after {
+    border: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/* MODERNIZR FALLBACK */
+.no-cssgradients a.button, .no-cssgradients a.button:visited,
+.no-borderradius a.button, .no-borderradius a.button:visited,
+.no-generatedcontent a.button, .no-generatedcontent a.button:visited {
+    background: no-repeat 0 0px;
+    height: 32px;
+    width: 82px;
+}
+
+.no-cssgradients a.button:hover,
+.no-borderradius a.button:hover,
+.no-generatedcontent a.button:hover {
+    background: no-repeat 0 -32px;
+}
+
+.no-cssgradients a.button:active,
+.no-borderradius a.button:active,
+.no-generatedcontent a.button:active {
+    background: no-repeat 0 -64px;
+    bottom: 0;
+    line-height: 35px;
+}
+
+.no-cssgradients a.gray,
+.no-cssgradients a.gray:visited,
+.no-cssgradients a.gray:hover { background-position-x: 0; }
+
+.no-cssgradients a.pink,
+.no-cssgradients a.pink:visited,
+.no-cssgradients a.pink:hover { background-position-x: -82px; }
+
+.no-cssgradients a.blue,
+.no-cssgradients a.blue:visited,
+.no-cssgradients a.blue:hover { background-position-x: -164px; }
+
+.no-cssgradients a.green,
+.no-cssgradients a.green:visited,
+.no-cssgradients a.green:hover { background-position-x: -246px; }
+
+.no-cssgradients a.turquoise,
+.no-cssgradients a.turquoise:visited,
+.no-cssgradients a.turquoise:hover { background-position-x: -328px; }
+
+.no-cssgradients a.black,
+.no-cssgradients a.black:visited,
+.no-cssgradients a.black:hover { background-position-x: -410px; }
+
+.no-cssgradients a.darkgray,
+.no-cssgradients a.darkgray:visited,
+.no-cssgradients a.darkgray:hover { background-position-x: -492px; }
+
+.no-cssgradients a.yellow,
+.no-cssgradients a.yellow:visited,
+.no-cssgradients a.yellow:hover { background-position-x: -574px; }
+
+.no-cssgradients a.purple,
+.no-cssgradients a.purple:visited,
+.no-cssgradients a.purple:hover { background-position-x: -656px; }
+
+.no-cssgradients a.darkblue,
+.no-cssgradients a.darkblue:visited,
+.no-cssgradients a.darkblue:hover { background-position-x: -738px; }
+
+.no-cssgradients a.button, .no-cssgradients a.button:visited, .no-cssgradients a.button:hover, .no-cssgradients a.button:before, .no-cssgradients a.button:after,
+.no-borderradius a.button, .no-borderradius a.button:visited, .no-borderradius a.button:hover, .no-borderradius a.button:before, .no-borderradius a.button:after,
+.no-generatedcontent a.button, .no-generatedcontent a.button:visited, .no-generatedcontent a.button:hover, .no-generatedcontent a.button:before, .no-generatedcontent a.button:after {
+    border: 0;
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; }
+    abbr[title]:after { content: " (" attr(title) ")"; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; } /* h5bp.com/t */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}

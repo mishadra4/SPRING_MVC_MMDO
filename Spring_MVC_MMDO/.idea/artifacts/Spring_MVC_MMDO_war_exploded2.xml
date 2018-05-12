@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Spring_MVC_MMDO:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_MVC_MMDO_war_exploded2</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring_MVC_MMDO" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.15.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+        <element id="artifact" artifact-name="Spring_MVC_MMDO:war exploded" />
+      </element>
+      <element id="javaee-facet-resources" facet="Spring_MVC_MMDO/web/Web" />
+    </root>
+  </artifact>
+</component>
