@@ -17,14 +17,14 @@
                 var cols = document.getElementById("cols");
                 var rows = document.getElementById("rows");
                 document.getElementById("alg").innerHTML += "";
-                for(var i = 0; i < cols.value; i++){
+                for (var i = 0; i < cols.value; i++) {
                     document.getElementById("alg").innerHTML += '<input class=\'data\' name="main"/>x';
                     document.getElementById("alg").innerHTML += i.toString();
                     document.getElementById("alg").innerHTML += "+";
                 }
                 document.getElementById("alg").innerHTML += ' -> <select name="mm"><option>max</option><option>min</option></select><br/>';
-                for(var i = 0; i < rows.value; i++){
-                    for(var j = 0; j < cols.value; j++) {
+                for (var i = 0; i < rows.value; i++) {
+                    for (var j = 0; j < cols.value; j++) {
                         document.getElementById("alg").innerHTML += '<input class=\'data\' name="data"/>x';
                         document.getElementById("alg").innerHTML += j.toString();
                         document.getElementById("alg").innerHTML += "+";
@@ -35,13 +35,13 @@
             }
         </script>
         <div align="center"  >
-            <br/>
             <div>
-                <h2>Знаходження максимумів та мінімумів функції</h2>
-                <br/><br/>
+                <h4>Знаходження максимумів та мінімумів функції</h4>
                 <form:form method="post" modelAttribute="size" action="/lab1" id="alg" >
-                    Cols: <form:input path="cols"/> <br/>
-                    Rows: <form:input path="rows"/> <br/>
+                    <td>
+                        <tr>Колонки:<form:input path="cols"/> <br/></tr>
+                        <tr>Стовпці: <form:input path="rows"/> <br/></tr>
+                    </td>
                     <input type="button" value="Намалювати матрицю" onclick="exec()" />
                     <form:button>Next Page</form:button><br/><br/>
                 </form:form>

@@ -23,8 +23,6 @@
                 <li><a href="/resources/downloads/lab4.rar" class="button black">Download</a><p class="down">Матеріали Лабораторна робота №4</p></li><br/><br/>
             </ul>
         </div>
-        <br/>
-        <br/>
     </jsp:body>
 
 </page:temp>

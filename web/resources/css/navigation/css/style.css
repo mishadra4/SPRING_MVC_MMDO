@@ -186,6 +186,9 @@ nav li.active a, nav li.active a:hover, nav a:active {
 nav li.green a, nav li.green a:active {
   border-bottom-color: #56c93d;
 }
+span green a, nav li.green a:active {
+  border-bottom-color: #56c93d;
+}
 nav li.red a, nav li.red a:active {
   border-bottom-color: #a54e49;
 }

@@ -33,14 +33,13 @@
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
 
 
-    <mvc:view-controller path="about.html" view-name="/about/about"/>
     <mvc:view-controller path="/lab1" view-name="/lab1"/>
     <mvc:view-controller path="/lab1_result" view-name="/lab1_result"/>
     <mvc:view-controller path="/lab3" view-name="/lab3"/>
     <mvc:view-controller path="/lab4" view-name="/lab4"/>
     <mvc:view-controller path="/lab3_result" view-name="/lab3_result"/>
     <mvc:view-controller path="/lab4_result" view-name="/lab4_result"/>
-    <mvc:view-controller path="/" view-name="/lab3_result"/>
+    <mvc:view-controller path="/" view-name="/index"/>
     <mvc:view-controller path="/materials" view-name="/materials"/>
 
 

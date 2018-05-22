@@ -11,6 +11,6 @@ public class MainController {
     @RequestMapping(value = "/")
     public ModelAndView init(){
         System.out.println("Hello");
-        return new ModelAndView("/lab1");
+        return new ModelAndView("/index");
     }
 }
