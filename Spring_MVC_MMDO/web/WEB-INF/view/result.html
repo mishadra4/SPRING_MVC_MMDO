@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handing Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Result</h1>
+<!--/*@thymesVar id="greeting" type="com.md.mmdo_web.web.Greeting"*/-->
+<p th:text="'id: ' + ${greeting.getId()}" ></p>
+<p th:text="'content: ' + ${greeting.getContent()}" />
+<a class="bordered-link" href="/greeting">Submit another message</a>
+</body>
+</html>
